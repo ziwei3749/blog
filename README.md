@@ -18,7 +18,7 @@
 
 1. JavaScript-多种继承的优缺点分析
 
-2. [JavaScript-自己模拟实现new语法糖](Articles/JavaScript进阶/自己模拟实现new语法糖/自己模拟实现new语法糖.md)
+2. [JavaScript-自己模拟实现new语法糖](https://github.com/ziwei3749/blog/issues/1)
 
 3. JavaScript-函数的this三段论
 
