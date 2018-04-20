@@ -28,7 +28,7 @@
 
 6. JavaScrip-变量提升
 
-7. JavaScript-模拟实现promise和then的链式调用
+7. [JavaScript-promise的使用细节](https://github.com/ziwei3749/blog/issues/2)
 
 8. JavaScript-不要混淆node.js和浏览器的eventloop
 
