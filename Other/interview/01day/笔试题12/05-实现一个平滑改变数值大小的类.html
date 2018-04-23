@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>500</div>
+    <script>
+        // 实现一个 js 的 class ，名字叫做：AnimateToNum，
+        // 功能是从某个数字递增或者递减到另外一个数字，并且不管数字如何变化，都可以在指定的时间内完成。
+        // var AnimateToNum = require( "animate-num" );
+
+        // var numAnim = new AnimateToNum( {
+        //     animTime: 2000, //每次数字变动持续的时间（ms），
+        //     initNum: 500, //初始化的数字
+        //     onChange: function ( num ) {
+        //         console.log( num );
+        //     }
+        // } );
+
+        // numAnim.toNum( 100 ); // 从500变化到100，用2000ms的时间，在onChange回调中会一直从500倒数到100
+
+        var div = document.querySelector( 'div' )
+
+        class AnimateToNum {
+            constructor( options ) {
+                console.log( options )
+                this.state = {}
+                this.state.animTime = options.animTime
+                this.state.initNum = options.initNum
+            }
+
+            toNum( targetNum ) {
+                
+                var timer = this.state.animTime / Math.abs( targetNum - this.state.initNum )
+                console.log(targetNum)
+                console.log(this.state.initNum)
+                console.log(this.state.animTime)
+                console.log(timer)
+                var timeId = setInterval( () => {
+                    if ( Number( div.innerText ) === targetNum ) {
+                        clearInterval( timeId )
+                    } else {
+                        div.innerText--
+                    }
+
+                }, timer )
+
+            }
+        }
+
+        var numAnim = new AnimateToNum( {
+            animTime: 5000, //每次数字变动持续的时间（ms），
+            initNum: 500, //初始化的数字
+            onChange: function ( num ) {
+                console.log( num );
+            }
+        } );
+
+        numAnim.toNum( 400 ); // 从500变化到100
+    </script>
+</body>
+
+</html>

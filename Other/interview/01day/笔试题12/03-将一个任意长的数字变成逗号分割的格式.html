@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 3.将一个任意长的数字变成逗号分割的格式
+        // 1234.56 => "1,234.56" , 123456789 => "123,456,789"
+        // parseToMoney(1234.56) // return "1,234.56"
+
+        // var num = 1234.56
+        // var str = String( num )
+        // var IntNum = str.split( '.' )[ 0 ]
+        // var reverseIntNum = IntNum.split( '' ).reverse().join( '' )
+        // var dotResult = str.split( '.' )[ 1 ]
+
+        // var IntResult = ''
+        // for ( var i = 0; i < reverseIntNum.length; i++ ) {
+
+        //     if ( i % 3 === 0 ) {
+        //         i === 0 ? IntResult += `${reverseIntNum[ i ]}` : IntResult += `,${reverseIntNum[ i ]}`
+        //     } else {
+        //         IntResult += reverseIntNum[ i ]
+        //     }
+
+        // }
+        // IntResult = IntResult.split( '' ).reverse().join( '' )
+        // console.log( IntResult )
+
+        // console.log( `${IntResult}.${dotResult}` )
+
+
+        function parseToMoney( num ) {
+
+            var str = String( num )
+            var IntNum = str.split( '.' )[ 0 ]
+            var reverseIntNum = IntNum.split( '' ).reverse().join( '' )
+            var dotResult = str.split( '.' )[ 1 ]
+
+            var IntResult = ''
+            for ( var i = 0; i < reverseIntNum.length; i++ ) {
+
+                if ( i % 3 === 0 ) {
+                    i === 0 ? IntResult += `${reverseIntNum[ i ]}` : IntResult += `,${reverseIntNum[ i ]}`
+                } else {
+                    IntResult += reverseIntNum[ i ]
+                }
+
+            }
+            IntResult = IntResult.split( '' ).reverse().join( '' )
+
+            return `${IntResult}.${dotResult}`
+        }
+
+        console.log( parseToMoney( 12231233254334.56 ) )
+
+
+        // 正则版本的答案 ： 关键词 向前匹配
+
+        console.log('1234567891'.replace(/(\d+?)(?=(\d{3})+$)/g, '$1,'))
+
+    </script>
+</body>
+
+</html>

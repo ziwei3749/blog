@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var string = "我的账户余额:2,235,467.20";
+        // console.log( ? );
+        // 请用js计算出我到底有多少钱（ 输出Number类型数字， 代码尽量简洁， 考虑通用情况）
+
+        // 我的答案：
+        var result = Number( string.split( ':' )[ 1 ].replace( /\,/g, '' ) )
+        // 标准答案：
+        console.log( new Number( string.replace( /[^0-9.]/g, '' ) ) )
+    </script>
+</body>
+
+</html>

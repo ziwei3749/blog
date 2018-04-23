@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>解析url</title>
+</head>
+
+<body>
+    <script>
+        // 尽可能全面正确的解析一个任意url的所有参数为Object。
+        //    var url = 'http://www.domain.com/?user=anonymous&id=123&id=456&city=%E5%8C%97%E4%BA%AC&d&enabled';
+        //    parseParam(url);
+        /**
+         结果：
+         {
+            user: 'anonymous',
+            id: [123, 456], // 重复出现的 key 要组装成数组，能被转成数字的就转成数字类型(Number之后用isNaN判断)
+            city: '北京', // 中文
+            enabled: true, // 未指定值的 key 约定值为 true
+         }
+         */
+        var url = 'http://www.domain.com/?user=anonymous&id=123&id=456&id=789&city=%E5%8C%97%E4%BA%AC&d&enabled=undefined';
+
+        var paramsArr = url.split( '?' )[ 1 ].split( '&' )
+        var obj = {}
+
+        paramsArr.forEach( item => {
+            var itemArr = item.split( '=' )
+            
+            itemArr[ 1 ] = decodeURI( itemArr[ 1 ] )
+            // 能转成数字的字符串，就转成数字类型
+            itemArr[ 1 ] = isNaN( Number( itemArr[ 1 ] ) ) ? itemArr[ 1 ] : Number( itemArr[ 1 ] )
+
+            itemArr[1] = itemArr[1] == 'undefined' ? true : itemArr[1] // 未指定值的 key 约定值为 true
+
+            if ( obj[ itemArr[ 0 ] ] ) { // 重复出现的 key 要组装成数组
+                var firstVal = obj[ itemArr[ 0 ] ]
+                if ( Array.isArray( obj[ itemArr[ 0 ] ] ) ) {
+
+                } else {
+                    obj[ itemArr[ 0 ] ] = []
+                    obj[ itemArr[ 0 ] ].push( firstVal )
+                }
+
+                obj[ itemArr[ 0 ] ].push( itemArr[ 1 ] )
+            } else {
+                obj[ itemArr[ 0 ] ] = itemArr[ 1 ]
+            }
+
+        } )
+        console.log( obj );
+    </script>
+</body>
+
+</html>

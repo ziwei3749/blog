@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 现提供几个读取文件的方法，不借助全局变量实现一个函数，
+        // 函数可以执行一次后返回一个目录下所有文件中是 .js 后缀的文件列表
+
+
+        // 读取一个文件夹下的所有文件夹和文件的路径列表（Array）
+        var readdirSync = function ( dir_path ) {
+            return [ filename ]
+        }
+
+        // 判断一个路径是否是文件夹
+        var isDirectory = function ( path ) {
+            return true / false;
+        }
+
+        // 判断一个文件/文件夹是否存在
+        var existsSync = function ( path ) {
+            return true / false;
+        }
+
+
+        var getJSFiles = function ( path ) {
+            var arr = []
+            if ( existsSync( path ) ) {
+                readdirSync( path ).forEach( item => {
+                    if ( isDirectory( item ) ) {
+                        getJSFiles( item )
+                    } else {
+                        arr.push( item )
+                    }
+                } )
+            }
+            return arr
+
+        }
+        getJSFiles( '/code/' ); // return 一个文件列表的数组
+
+        // 答案：
+        // var getJSFiles = function ( path ) {
+        //     var result = [];
+        //     if ( existsSync( path ) ) {
+        //         if ( isDirectory( path ) ) {
+        //             var files = readdirSync( path );
+        //             files.forEach( ( file ) => {
+        //                 result = result.concat( getJSFiles( file ) );
+        //             } );
+        //         } else if ( /\.js$/.test( path ) ) {
+        //             result.push( path );
+        //         }
+        //     }
+        //     return result;
+        // }
+    </script>
+</body>
+
+</html>

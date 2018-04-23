@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 有一个全局变量 a，有一个全局函数 b，实现一个方法bindData，
+        // 执行后，a的任何赋值都会触发b的执行。而且b的作用域要需要指向到绑定到触发的对象上
+        var a = 1;
+
+        function b() {
+            console.log( 'a的值发生改变' );
+        }
+        bindData();
+        a = 2; // 此时输出 a的值发生改变
+    </script>
+</body>
+
+</html>
