@@ -36,7 +36,7 @@
 
 10. JavaScript-函数节流
 
-11. JavaScript-函数防抖
+11. [JavaScript-函数防抖](https://github.com/ziwei3749/blog/issues/4)
 
 12. JavaScript-数组去重
 
@@ -44,9 +44,9 @@
 
 14. JavaScript-深拷贝
 
-15. JavaScript-拍平一个数组
+15. [JavaScript-拍平一个数组](https://github.com/ziwei3749/blog/issues/5)
 
-16. JavaScript-函数柯里化
+16. [JavaScript-函数柯里化](https://github.com/ziwei3749/blog/issues/3)
 
 17. JavaScript-ES6的...操作符
 
