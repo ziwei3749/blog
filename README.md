@@ -1,44 +1,43 @@
-# ziwei的博客
+# ziwei 的博客
 
-最近发现用github的issues写博客的形式不错,就借鉴一下。
+最近发现用 github 的 issues 写博客的形式不错,就借鉴一下。
 
 主要是整理下现阶段研究的东西,大多数也是个人面试、工作中遇到和研究过的点。
 
-
 ## 专栏
 
-- 掘金主页
-- [segmentfault主页](https://segmentfault.com/u/ziwei3749)
+* 掘金主页
+* [segmentfault 主页](https://segmentfault.com/u/ziwei3749)
 
-## 【CSS专题】
+## 【CSS 专题】
 
 1.xx
 
-## JavaScript专题
+## JavaScript 专题
 
-1. JavaScript-多种继承的优缺点分析
+1.  JavaScript-多种继承的优缺点分析
 
-2. [JavaScript-自己模拟实现new语法糖](https://github.com/ziwei3749/blog/issues/1)
+2.  [JavaScript-自己模拟实现 new 语法糖](https://github.com/ziwei3749/blog/issues/1)
 
-3. JavaScript-函数的this三段论
+3.  JavaScript-函数的 this 三段论
 
-4. JavaScript-自己模拟实现bind和apply
- 
-5. JavaScript-闭包
+4.  JavaScript-自己模拟实现 bind 和 apply
 
-6. JavaScrip-变量提升
+5.  JavaScript-闭包
 
-7. [JavaScript-promise的使用细节](https://github.com/ziwei3749/blog/issues/2)
+6.  JavaScrip-变量提升
 
-8. JavaScript-不要混淆node.js和浏览器的eventloop
+7.  [JavaScript-promise 的使用细节](https://github.com/ziwei3749/blog/issues/2)
 
-9. JavaScript-学习async和await
+8.  JavaScript-不要混淆 node.js 和浏览器的 eventloop
+
+9.  JavaScript-学习 async 和 await
 
 10. JavaScript-函数节流
 
 11. [JavaScript-函数防抖](https://github.com/ziwei3749/blog/issues/4)
 
-12. JavaScript-数组去重
+12. [JavaScript-数组去重](https://github.com/ziwei3749/blog/issues/7)
 
 13. JavaScript-类型判断和隐式转换
 
@@ -48,14 +47,15 @@
 
 16. [JavaScript-函数柯里化](https://github.com/ziwei3749/blog/issues/3)
 
-17. JavaScript-ES6的...操作符
+17. JavaScript-ES6 的...操作符
 
-18. JavaScript-学习ES6的...
+18. [JavaScript-实现 Array 的 unshift/shift/push/pop 方法](https://github.com/ziwei3749/blog/issues/8)
 
-19. JavaScript-学习ES6的map和set
+19. JavaScript-学习 ES6 的 map 和 set
 
-20. JavaScript-学习ES6的module
+20. JavaScript-学习 ES6 的 module
 
+21. [JavaScript-正则练习](https://github.com/ziwei3749/blog/issues/6)
 
 ## 勘误和交流
 
@@ -66,6 +66,3 @@
 ## License
 
 所有文章采用[知识共享署名-非商业性使用-相同方式共享 3.0 中国大陆许可协议](https://creativecommons.org/licenses/by-nc-sa/3.0/cn/)进行许可。
-
-
-
