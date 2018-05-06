@@ -15,7 +15,7 @@
 
 ## JavaScript 专题
 
-1.  JavaScript-多种继承的优缺点分析
+1.  [JavaScript-多种继承的优缺点分析](https://github.com/ziwei3749/blog/issues/9)
 
 2.  [JavaScript-自己模拟实现 new 语法糖](https://github.com/ziwei3749/blog/issues/1)
 
