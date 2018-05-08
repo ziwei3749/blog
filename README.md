@@ -9,11 +9,11 @@
 * 掘金主页
 * [segmentfault 主页](https://segmentfault.com/u/ziwei3749)
 
-## 【CSS 专题】
+## CSS 专题
 
-1.[单行和多行文本溢出](https://github.com/ziwei3749/blog/issues/10)
+1. [单行和多行文本溢出](https://github.com/ziwei3749/blog/issues/10)
 
-2.[纯CSS实现正方形](https://github.com/ziwei3749/blog/issues/10)
+2. [纯CSS实现正方形](https://github.com/ziwei3749/blog/issues/10)
 
 ## JavaScript 专题
 
