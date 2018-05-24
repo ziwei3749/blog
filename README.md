@@ -59,9 +59,17 @@
 
 21. [JavaScript-正则练习](https://github.com/ziwei3749/blog/issues/6)
 
-## Other
+## 前端框架
 
-22. [不黑不吹聊聊前端框架]()
+1. [不黑不吹聊聊前端框架](https://github.com/ziwei3749/blog/issues/12)
+
+2. [vue-router学习成果](https://github.com/ziwei3749/blog/issues/13)
+
+## 日常开发踩坑实录
+
+1. [JWT跨域踩坑](https://github.com/ziwei3749/blog/issues/14)
+
+
 
 ## 勘误和交流
 
