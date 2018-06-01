@@ -9,13 +9,13 @@
 * 掘金主页
 * [segmentfault 主页](https://segmentfault.com/u/ziwei3749)
 
-## CSS 专题
+## CSS 
 
 1. [单行和多行文本溢出](https://github.com/ziwei3749/blog/issues/10)
 
 2. [纯CSS实现正方形](https://github.com/ziwei3749/blog/issues/10)
 
-## JavaScript 专题
+## JavaScript 
 
 1.  [JavaScript-多种继承的优缺点分析](https://github.com/ziwei3749/blog/issues/9)
 
@@ -63,11 +63,38 @@
 
 1. [不黑不吹聊聊前端框架](https://github.com/ziwei3749/blog/issues/12)
 
-2. [vue-router学习成果](https://github.com/ziwei3749/blog/issues/13)
+2. [vue生命周期钩子]
+
+2. [前端路由和vue-router实现](https://github.com/ziwei3749/blog/issues/13)
+
+3. [vue源码-双向绑定具体如何初始化和工作]
+
+4. [vue源码-剖析observer,dep,watch三者关系 如何具体的实现数据双向绑定
+
+5. [vue源码-Vue的自定义事件机制]
+
+6. [vue源码-props、methods、computed与watch如何具体的初始化和工作]
+
+7. [vue源码-vue的vdom及其diff算法]
+
+8. [vue源码-props、methods、computed与watch如何具体的初始化和工作]
+
+9. [vue源码-深入理解Vue的computed实现原理及其实现方式]
+
+10. [vue源码-深层次理解Vue的watch实现原理及其实现方式]
+
+11. [vue源码-彻底搞懂Vue针对数组和双向绑定(MVVM)的处理方式]
 
 ## 日常开发踩坑实录
 
 1. [JWT跨域踩坑](https://github.com/ziwei3749/blog/issues/14)
+2. [团队共享Mac上Page文档到icloud](https://github.com/ziwei3749/blog/issues/15)
+3. [一篇文章看完 webpack@3.6.0 的踩坑记录](https://github.com/ziwei3749/blog/issues/16)
+
+## 《前端工程化体系设计与实践》读书笔记
+
+1. [第二章-脚手架的功能和本质](https://github.com/ziwei3749/blog/issues/17)
+2. [第三章-构建]()
 
 
 
