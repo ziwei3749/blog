@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var str = "\\?\usb#vid_2bc5&pid_0407#7&1808277d&0&3#{c3b5f022-5a42-1980-1909-ea72095601b1}"
+        // console.log(str)
+
+        // JS里\u后面跟4位数十六进制数
+        var str = "sb#vid_2bc5&pid_0407#7&1808277d&0&3#{c3b5f022-5a42-1980-1909-ea72095601b1}"
+        // /\bpid\S*?#{\b/.text(str)
+
+        console.log(/\bpid\S*?#{\b/.test(str))
+        console.log(str.match(/\bpid\S*?#{\b/))
+    </script>
+</body>
+
+</html>

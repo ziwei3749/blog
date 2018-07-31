@@ -446,7 +446,15 @@ if (process.env.type == "build") {
 
 ```
 
-> watch的正确使用方法
+通过webpack.ProvidePlugin来引入第三方库的好处是，如果你没使用JQ，就不打包到JQ里
+
+通过import $ from 'jquery'的话是，不管你是否使用都打包进去
+
+
+
+
+
+> 19.watch的正确使用方法
 
 webpack --watch : 可以做到代码改变后，保存就自动打包 （这里不太懂）
 
@@ -460,3 +468,81 @@ webpack --watch : 可以做到代码改变后，保存就自动打包 （这里�
     }
 
 ```
+
+> 20.抽离第三方类库，不一起打包到app.js里
+
+- 1.修改entry,配置多入口
+
+```
+entry: {
+        app: "./src/entry.js",
+        jquery:'jquery'
+    },
+
+```
+
+
+- 2. 使用插件 webpack.optimize.CommonsChunkPlugin({})
+
+```
+       new webpack.optimize.CommonsChunkPlugin({
+            name: "jquery", // 把入口文件jquey单独抽离
+            filename: "assets/js/jquery.js", //抽离到什么位置
+            minChunks: 2 // 最少抽离几个文件出来，不写无法抽离成功，一般写2就可以了
+        })
+
+```
+
+> 21.多个类库，如何抽离？
+
+- 1.一样的修改entry
+
+```
+    entry: {
+        app: "./src/entry.js",
+        jquery: "jquery",
+        vue:'vue'
+    },
+
+```
+
+- 2.用数组形式使用插件CommonsChunkPlugin
+
+```
+        new webpack.optimize.CommonsChunkPlugin({
+            name: ["jquery","vue"], // 把入口文件jquey单独抽离
+            filename: "assets/js/[name].js", //抽离到什么位置
+            minChunks: 2 // 最少抽离几个文件出来，不写无法抽离成功，一般写2就可以了
+        })
+
+```
+
+
+> 22.集中拷贝静态资源copy-webpack-plugin
+
+就是说有一些图片资源，从src里拷贝到dist里，资源上传到服务器，将来以备不时之需
+
+```
+     new copyWebpackPlugin([
+            {
+                from: __dirname + "/src/public",
+                to: './public'     // 他以出口，也就是dist开头
+            }
+        ])
+
+```
+
+> 23.webpack取消babel的严格模式
+
+百度Ueditor这个富文本编辑器，用的时候里面的源代码用到argument.callee
+
+这个属性在严格模式下是会报错的，还有源代码里有一个变量Uparse，没有声明就直接使用了。在严格模式下也报错了
+
+因为我们用了babel，就自动开启严格模式，所以就会报这个错误，使用bable设置ignore这个文件
+
+
+我用的是 babel-plugin-transform-remove-strict-mode
+
+
+
+https://segmentfault.com/q/1010000007415253
