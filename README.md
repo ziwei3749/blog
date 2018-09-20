@@ -6,16 +6,16 @@
 
 ## 专栏
 
-* 掘金主页
-* [segmentfault 主页](https://segmentfault.com/u/ziwei3749)
+-   掘金主页
+-   [segmentfault 主页](https://segmentfault.com/u/ziwei3749)
 
-## CSS 
+## CSS
 
 1. [单行和多行文本溢出](https://github.com/ziwei3749/blog/issues/10)
 
-2. [纯CSS实现正方形](https://github.com/ziwei3749/blog/issues/10)
+2. [纯 CSS 实现正方形](https://github.com/ziwei3749/blog/issues/10)
 
-## JavaScript 
+## JavaScript
 
 1.  [JavaScript-多种继承的优缺点分析](https://github.com/ziwei3749/blog/issues/9)
 
@@ -63,44 +63,42 @@
 
 1. [不黑不吹聊聊前端框架](https://github.com/ziwei3749/blog/issues/12)
 
-2. [vue生命周期钩子]
+2. [vue 生命周期钩子]
 
-2. [前端路由和vue-router实现](https://github.com/ziwei3749/blog/issues/13)
+3. [前端路由和 vue-router 实现](https://github.com/ziwei3749/blog/issues/13)
 
-3. [vue源码0-目录和不同构建版本]()
+4. [vue 源码 0-源码目录和 vue 的不同构建版本](https://github.com/ziwei3749/blog/issues/19)
 
-4. [vue源码1-vue构造函数]()
+5. [vue 源码 1-vue 构造函数](https://github.com/ziwei3749/blog/issues/20)
 
-5. [vue源码-Vue的自定义事件机制]
+6. [vue 源码-Vue 的自定义事件机制]
 
-6. [vue源码-props、methods、computed与watch如何具体的初始化和工作]
+7. [vue 源码-props、methods、computed 与 watch 如何具体的初始化和工作]
 
-7. [vue源码-vue的vdom及其diff算法]
+8. [vue 源码-vue 的 vdom 及其 diff 算法]
 
-8. [vue源码-props、methods、computed与watch如何具体的初始化和工作]
+9. [vue 源码-props、methods、computed 与 watch 如何具体的初始化和工作]
 
-9. [vue源码-深入理解Vue的computed实现原理及其实现方式]
+10. [vue 源码-深入理解 Vue 的 computed 实现原理及其实现方式]
 
-10. [vue源码-深层次理解Vue的watch实现原理及其实现方式]
+11. [vue 源码-深层次理解 Vue 的 watch 实现原理及其实现方式]
 
-11. [vue源码-彻底搞懂Vue针对数组和双向绑定(MVVM)的处理方式]
+12. [vue 源码-彻底搞懂 Vue 针对数组和双向绑定(MVVM)的处理方式]
 
 ## 日常开发踩坑实录
 
-1. [JWT跨域踩坑](https://github.com/ziwei3749/blog/issues/14)
-2. [团队共享Mac上Page文档到icloud](https://github.com/ziwei3749/blog/issues/15)
+1. [JWT 跨域踩坑](https://github.com/ziwei3749/blog/issues/14)
+2. [团队共享 Mac 上 Page 文档到 icloud](https://github.com/ziwei3749/blog/issues/15)
 3. [一篇文章看完 webpack@3.6.0 的踩坑记录](https://github.com/ziwei3749/blog/issues/16)
-4. [path.join和path.resolve的区别](https://github.com/ziwei3749/blog/issues/18)
-5. [webpack3和4对比]()
-6. [webpack4的开发环境搭建]()
-7. [webpack4的生产环境打包优化]()
+4. [path.join 和 path.resolve 的区别](https://github.com/ziwei3749/blog/issues/18)
+5. [webpack3 和 4 对比]()
+6. [webpack4 的开发环境搭建]()
+7. [webpack4 的生产环境打包优化]()
 
 ## 《前端工程化体系设计与实践》读书笔记
 
 1. [第二章-脚手架的功能和本质](https://github.com/ziwei3749/blog/issues/17)
 2. [第三章-构建]()
-
-
 
 ## 勘误和交流
 
