@@ -67,9 +67,9 @@
 
 2. [前端路由和vue-router实现](https://github.com/ziwei3749/blog/issues/13)
 
-3. [vue源码-双向绑定具体如何初始化和工作]
+3. [vue源码0-目录和不同构建版本]()
 
-4. [vue源码-剖析observer,dep,watch三者关系 如何具体的实现数据双向绑定
+4. [vue源码1-vue构造函数]()
 
 5. [vue源码-Vue的自定义事件机制]
 
